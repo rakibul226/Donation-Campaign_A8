@@ -1,8 +1,8 @@
-
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-base-100 md:px-14 lg:px-36 pt-10">
+        <div className="navbar bg-base-100 md:px-14 lg:px-36 pt-10 justify-between ">
   <div className="navbar-start md:navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
@@ -16,15 +16,44 @@ const Navbar = () => {
       <li><a>Statistics</a></li>
       </ul>
     </div>
-    <a className="ml-40 w-48 mb-4 md:m-0 btn btn-ghost text-xl"> <img src="../../public/Logo.png" alt="" /> </a>
+    <Link to="/" className="ml-40 w-48 mb-4 md:m-0 text-xl"> <img src="../../public/Logo.png" alt="Donation"/></Link> 
   </div>
   <div className="navbar-end hidden md:flex">
-    <ul className="menu menu-horizontal px-1">
-      <li><a>Home</a></li>
+    <ul className=" gap-5 justify-stretch menu-horizontal px-1 ">
+
       <li>
-        <a href="">Donation</a>
-      </li>
-      <li><a>Statistics</a></li>
+                    <NavLink
+                            to="/"
+                            className={({ isActive, isPending }) =>
+                                isPending ? "pending" : isActive ? "bg-gray-500 text-white underline px-4 py-2 rounded-md" : ""
+                            }
+                            >
+                            Home
+                    </NavLink>
+
+        </li>
+        <li>
+                    <NavLink
+                            to="./Donation"
+                            className={({ isActive, isPending }) =>
+                                isPending ? "pending" : isActive ? "bg-gray-500 text-white underline px-4 py-2 rounded-md" : ""
+                        }
+                            >
+                            Donation
+                    </NavLink>
+
+        </li>
+        <li>
+                    <NavLink
+                            to="./Statistics"
+                            className={({ isActive, isPending }) =>
+                                 isPending ? "pending" : isActive ? "bg-gray-500 text-white underline px-4 py-2 rounded-md" : ""
+                        }
+                            >
+                            Statistics
+                    </NavLink>
+        </li>
+
     </ul>
   </div>
  
