@@ -3,15 +3,14 @@ const Banner = () => {
     return (
       
       <div className="hero" style={{backgroundImage: 'url(https://i.ibb.co/tbRbCkV/donet2.jpg)'}}>
-                  {/* <div className="hero" style={{backgroundImage: 'url(https://i.ibb.co/ZLKzBS7/student-girl-give-fist-bump-success-study.jpg)'}}> */}
+         
                   
-      <div className="hero-overlay bg-opacity-50 my-52 py-20"></div>
-  {/* <div className="hero-overlay bg-opacity-60"></div> */}
+      <div className="hero-overlay bg-opacity-50 my-52 py-20 "></div>
   <div className="hero-content text-center text-neutral-content">
 
 
     <div className=" mt-20">
-      <h1 className="mb-5 mt-5 text-5xl font-bold text-white">I Grow By Helping People In Need</h1>
+      <h1 className="mb-5 mt-5 text-2xl md:text-4xl lg:5xl font-bold  text-white">I Grow By Helping People In Need</h1>
             
 
 <div className="mt-7">
