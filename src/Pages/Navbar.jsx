@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-base-100 md:px-14 lg:px-36 pt-10">
+        <div className="navbar bg-base-100 md:px-14 lg:px-36 pt-10 mb-3">
   <div className="navbar-start">
     <div className="dropdown flex flex-1 md:flex-none">
       <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
@@ -26,8 +26,9 @@ const Navbar = () => {
                     <NavLink
                             to="/"
                             className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "bg-gray-500 text-white underline" : ""
+                                isPending ? "pending" : isActive ? " text-orange-700 underline" : ""
                             }
+                            
                             >
                             Home
                     </NavLink>
@@ -37,7 +38,7 @@ const Navbar = () => {
                     <NavLink
                             to="./Donation"
                             className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "bg-gray-500 text-white underline" : ""
+                                isPending ? "pending" : isActive ? " text-orange-700 underline" : ""
                             }
                             >
                             Donation
@@ -48,7 +49,7 @@ const Navbar = () => {
                     <NavLink
                             to="./Statistics"
                             className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "bg-gray-500 text-white underline" : ""
+                                isPending ? "pending" : isActive ? " text-orange-700 underline" : ""
                             }
                             >
                             Statistics
