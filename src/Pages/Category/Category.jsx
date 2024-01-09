@@ -9,7 +9,7 @@ const Category = ({category}) => {
 
     return (
 
-    <div className="card w-96 bg-base-100 shadow-xl" style={{background:card_bg}}>
+    <div className="card w-96 md:w-80 lg:w-72 mx-auto bg-base-100 shadow-xl" style={{background:card_bg}}>
         <figure><img src={picture} alt="Shoes" /></figure>
         <div className="pl-6 py-6 ">
         <span className="rounded px-3 " style={{background:category_bg,color: text_color}}>{category_type}</span>
