@@ -8,7 +8,7 @@
       "card_bg": "#0052ff26 ",
         "text_color": "#0052FF",
         "description": "Discover the key to a vibrant life with our premium health product. Elevate your well-being and embrace a healthier lifestyle. Order now for only $199.99.",
-        "price": "$199.99"
+        "price": "199.99"
     },
     {
         "product_id": "2",
@@ -19,7 +19,7 @@
         "card_bg": "#ff444a26",
         "text_color": "#FF444A",
         "description": "Ignite your intellect with our cutting-edge education product. Unlock the power of learning and excel in your academic journey. Get it now for just $49.99.",
-        "price": "$49.99"
+        "price": "49.99"
     },
     {
         "product_id": "3",
@@ -30,7 +30,7 @@
         "card_bg": "#79c23f26",
         "text_color": "#79C23F",
         "description": "Revamp your wardrobe with our stylish clothing collection. Experience fashion like never before. Grab yours for only $79.99.",
-        "price": "$79.99"
+        "price": "79.99"
     },
     {
         "product_id": "4",
@@ -41,7 +41,7 @@
         "card_bg": "#f39c1226 ",
         "text_color": "#F39C12",
         "description": "Indulge in culinary pleasures with our delectable food product. Savor every bite of goodness. Yours for just $29.99.",
-        "price": "$29.99"
+        "price": "29.99"
     },
     {
         "product_id": "5",
@@ -52,7 +52,7 @@
         "card_bg": "#f39c1226 ",
         "text_color": "#F39C12",
         "description": "Satisfy your taste buds with our exquisite food product. A culinary delight for just $39.99.",
-        "price": "$39.99"
+        "price": "39.99"
     },
     {
         "product_id": "6",
@@ -63,7 +63,7 @@
       "card_bg": "#0052ff26 ",
         "text_color": "#0052FF",
         "description": "Experience wellness like never before. Elevate your health journey with our top-notch product. Only $149.99 to transform your life.",
-        "price": "$149.99"
+        "price": "149.99"
     },
     {
         "product_id": "7",
@@ -74,7 +74,7 @@
         "card_bg": "#ff444a26",
         "text_color": "#FF444A",
         "description": "Master your education with our innovative product. Excel in every subject. Yours for just $129.99.",
-        "price": "$129.99"
+        "price": "129.99"
     },
     {
         "product_id": "8",
@@ -85,7 +85,7 @@
         "card_bg": "#79c23f26",
         "text_color": "#79C23F",
         "description": "Step into style with our trendy clothing collection. Redefine your fashion statement. Grab yours for only $89.99.",
-        "price": "$89.99"
+        "price": "89.99"
     },
    
     {
@@ -97,7 +97,7 @@
       "card_bg": "#0052ff26 ",
         "text_color": "#0052FF",
         "description": "Rejuvenate your vitality with our premium health product. Feel the energy. Yours for $69.99.",
-        "price": "$69.99"
+        "price": "69.99"
     },
     {
         "product_id": "10",
@@ -108,7 +108,7 @@
         "card_bg": "#ff444a26",
         "text_color": "#FF444A",
         "description": "Dive into knowledge with our comprehensive education product. Unleash your potential. Just $109.99.",
-        "price": "$109.99"
+        "price": "109.99"
     },
     {
         "product_id": "11",
@@ -119,7 +119,7 @@
         "card_bg": "#79c23f26",
         "text_color": "#79C23F",
         "description": "Step into style with our trendy clothing collection. Redefine your fashion statement. Grab yours for only $59.99.",
-        "price": "$59.99"
+        "price": "59.99"
     },
     {
         "product_id": "12",
@@ -130,6 +130,6 @@
         "card_bg": "#f39c1226 ",
         "text_color": "#F39C12",
         "description": "Experience culinary ecstasy with our tantalizing food product. Only $49.99 for a flavorful journey.",
-        "price": "$49.99"
+        "price": "49.99"
     }
 ]
