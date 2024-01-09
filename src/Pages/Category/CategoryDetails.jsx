@@ -2,8 +2,22 @@
 const CategoryDetails = ({categoryItem}) => {
     console.log(categoryItem);
 
-    const {product_id,picture,title,category_type,price,category_bg,card_bg,text_color,description} = categoryItem || {};
+    const {picture,title,price,text_color,description} = categoryItem || {};
 
+    const handleAddToDonation = ()=> {
+        const addToDonationArray = [];
+
+        const donatedItems = JSON.parse(localStorage.getItem('favorites'))
+    
+        if(!donatedItems){
+        addToDonationArray.push(categoryItem)
+        localStorage.setItem('favorites',JSON.stringify(addToDonationArray))
+        }
+        else{
+        addToDonationArray.push(...donatedItems,categoryItem)
+        localStorage.setItem('favorites',JSON.stringify(addToDonationArray))
+        }
+    }
 
     return (
 
@@ -12,7 +26,7 @@ const CategoryDetails = ({categoryItem}) => {
         <div className="hero w-auto " style={{backgroundImage: `url(${picture})`, height: '450px'}}>
         </div>
         <div className="hero-overlay h-24 bg-opacity-50 relative bottom-24">
-            <button className="px-5 py-1 rounded mt-8 ml-10" style={{background:text_color,color: "white"}}>Donate ${price}</button>
+            <button className="px-5 py-1 rounded mt-8 ml-10" style={{background:text_color,color: "white"}} onClick={handleAddToDonation}>Donate ${price}</button>
         </div>
         
         <div className="relative bottom-16">
