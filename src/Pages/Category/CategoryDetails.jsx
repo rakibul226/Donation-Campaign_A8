@@ -1,8 +1,9 @@
+import Swal from "sweetalert2";
 
 const CategoryDetails = ({categoryItem}) => {
     console.log(categoryItem);
 
-    const {picture,title,price,text_color,description} = categoryItem || {};
+    const {product_id,picture,title,price,text_color,description} = categoryItem || {};
 
     const handleAddToDonation = ()=> {
         const addToDonationArray = [];
@@ -12,12 +13,34 @@ const CategoryDetails = ({categoryItem}) => {
         if(!donatedItems){
         addToDonationArray.push(categoryItem)
         localStorage.setItem('favorites',JSON.stringify(addToDonationArray))
+        Swal.fire({
+            icon: "success",
+            title: "Good Job.!",
+            text: "Donation successful.",
+            footer: '<a href="#">Thanks for your Donation</a>'
+          });
         }
         else{
-        addToDonationArray.push(...donatedItems,categoryItem)
-        localStorage.setItem('favorites',JSON.stringify(addToDonationArray))
-        }
+            const isExist = donatedItems.find((categoryItem) => categoryItem.product_id === product_id); 
+            if(!isExist){
+                addToDonationArray.push(...donatedItems,categoryItem)
+                localStorage.setItem('favorites',JSON.stringify(addToDonationArray))
+                Swal.fire({
+                    icon: "success",
+                    title: "Good Job.!",
+                    text: "Donation successful.",
+                    footer: '<a href="#">Thanks for your Donation</a>'
+                });
+            }
+            else{
+                Swal.fire({
+                  title: "DUPLICATE",
+                  text: "Duplicate item",
+                  icon: "error"
+                });
+              }
     }
+}
 
     return (
 
