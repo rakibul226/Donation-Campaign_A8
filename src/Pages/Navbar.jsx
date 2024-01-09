@@ -14,7 +14,7 @@ const Navbar = () => {
         <li><Link to="/statistics">Statistics </Link></li>
       </ul>
     </div>
-    <div className="flex flex-1 md:flex-none pr-2 ">
+    <div className="flex flex-1 md:flex-none pr-4 ">
     <Link to="/" className="ml-40 w-48 mb-4 md:m-0 "> <img src="../../public/Logo.png" alt="" /></Link>
 
     </div>

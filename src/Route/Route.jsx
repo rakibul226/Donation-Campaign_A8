@@ -3,6 +3,8 @@ import MainLayout from "../Layout/MainLayout";
 import Home from "../Pages/Home";
 import Donation from "../Pages/Donation";
 import Statistics from "../Pages/Statistics";
+import SelectedCategory from "../Pages/Category/SelectedCategory";
+
 
 
 const myCreatedRoute = createBrowserRouter([
@@ -24,6 +26,11 @@ const myCreatedRoute = createBrowserRouter([
                 path :"/statistics",
                 element  : <Statistics></Statistics>
             },
+            {
+                path :"/category/:product_id",
+                element : <SelectedCategory></SelectedCategory>,
+                loader :() => fetch('../../public/donation.json')
+            }
         ] 
     }
 ])
