@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Donated = ({ item }) => {
   console.log(item);
   const {
@@ -14,7 +16,7 @@ const Donated = ({ item }) => {
 
   return (
     <div
-      className=" w-full  mx-auto bg-base-100 shadow-xl flex flex-row"
+      className=" w-full  mx-auto bg-base-100  flex flex-row"
       style={{ background: card_bg }}
     >
       <figure>
@@ -30,15 +32,14 @@ const Donated = ({ item }) => {
         <h2 className="card-title pl-1 mt-1" style={{}}>
           {title}
         </h2>
-        <p className="text-sm" style={{ color: text_color }}>
+        <p className="text-sm mb-3" style={{ color: text_color }}>
           ${price}
         </p>
-        <button
-          className="rounded px-2 text-white mt-3"
-          style={{ background: text_color }}
-        >
+        <Link to={`/category/${product_id}`} className="rounded px-2 py-1 text-white "
+          style={{ background: text_color }}>
+        
           View Details
-        </button>
+        </Link>
       </div>
     </div>
   );
