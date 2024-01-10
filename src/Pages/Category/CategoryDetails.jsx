@@ -8,11 +8,11 @@ const CategoryDetails = ({categoryItem}) => {
     const handleAddToDonation = ()=> {
         const addToDonationArray = [];
 
-        const donatedItems = JSON.parse(localStorage.getItem('favorites'))
+        const donatedItems = JSON.parse(localStorage.getItem('donated'))
     
         if(!donatedItems){
         addToDonationArray.push(categoryItem)
-        localStorage.setItem('favorites',JSON.stringify(addToDonationArray))
+        localStorage.setItem('donated',JSON.stringify(addToDonationArray))
         Swal.fire({
             icon: "success",
             title: "Good Job.!",
@@ -24,7 +24,7 @@ const CategoryDetails = ({categoryItem}) => {
             const isExist = donatedItems.find((categoryItem) => categoryItem.product_id === product_id); 
             if(!isExist){
                 addToDonationArray.push(...donatedItems,categoryItem)
-                localStorage.setItem('favorites',JSON.stringify(addToDonationArray))
+                localStorage.setItem('donated',JSON.stringify(addToDonationArray))
                 Swal.fire({
                     icon: "success",
                     title: "Good Job.!",
