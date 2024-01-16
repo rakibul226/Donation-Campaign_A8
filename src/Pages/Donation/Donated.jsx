@@ -10,9 +10,10 @@ const Donated = ({ item }) => {
     category_bg,
     card_bg,
     text_color,
-    description,
     price,
   } = item || {};
+
+  
 
   return (
     <div

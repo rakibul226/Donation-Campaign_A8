@@ -1,9 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../Layout/MainLayout";
-import Home from "../Pages/Home";
-import Donation from "../Pages/Donation";
-import Statistics from "../Pages/Statistics";
 import SelectedCategory from "../Pages/Category/SelectedCategory";
+import Donation from "../Pages/Donation";
+import Home from "../Pages/Home";
+import Statistics from "../Pages/Statistics/Statistics";
 
 
 
