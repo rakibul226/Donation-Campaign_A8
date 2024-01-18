@@ -14,13 +14,13 @@ function PieChart() {
 
     return (
         <React.Fragment>
-            <div className="container-fluid">
+            <div className="container-fluid ml-12">
 
                 {donatedItems.length > 0 ? (
                     <Chart
                         type="pie"
-                        width={1349}
-                        height={550}
+                        width={375}
+                        height={300}
                         series={[totalDonation, donatedItems.length]}
                         options={{
                             labels: ['Total Donation', 'Donated Items']
