@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Donated = ({ item }) => {
-  console.log(item);
+  // console.log(item);
   const {
     product_id,
     picture,

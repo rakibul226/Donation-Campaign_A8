@@ -18,7 +18,8 @@ const Donation = () => {
   return (
     <div>
       {noDataFound ? (
-        <p>{noDataFound}</p>
+        <p className="text-center mt-96 text-6xl">No data found.</p>
+
       ) : (
         <div>
           <div className="grid grid-cols-1 md:grid-cols-2  gap-6 md:px-14 lg:px-36 md:mt-10">
