@@ -1,4 +1,5 @@
 import Category from "./Category";
+import PropTypes from 'prop-types';
 
 const AllCategory = ({categorys}) => {
 
@@ -14,5 +15,9 @@ const AllCategory = ({categorys}) => {
         </div>
     );
 };
+
+AllCategory.propTypes = {
+    categorys: PropTypes.array.isRequired,
+  };
 
 export default AllCategory;

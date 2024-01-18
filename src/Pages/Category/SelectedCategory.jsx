@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
-import Category from "./Category";
 import CategoryDetails from "./CategoryDetails";
 
 const SelectedCategory = () => {

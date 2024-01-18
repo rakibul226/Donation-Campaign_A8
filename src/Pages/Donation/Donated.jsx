@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 const Donated = ({ item }) => {
   // console.log(item);
@@ -44,6 +45,10 @@ const Donated = ({ item }) => {
       </div>
     </div>
   );
+};
+
+Donated.propTypes = {
+  item: PropTypes.object.isRequired
 };
 
 export default Donated;

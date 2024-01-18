@@ -1,4 +1,5 @@
 import Swal from "sweetalert2";
+import PropTypes from 'prop-types';
 
 const CategoryDetails = ({categoryItem}) => {
     console.log(categoryItem);
@@ -61,5 +62,10 @@ const CategoryDetails = ({categoryItem}) => {
         
     );
 };
+
+
+CategoryDetails.propTypes = {
+    categoryItem: PropTypes.object.isRequired
+  };
 
 export default CategoryDetails;

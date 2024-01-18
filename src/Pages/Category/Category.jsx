@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 const Category = ({category}) => {
 
     // console.log(category);
 
-    const {product_id,picture,title,category_type,category_bg,card_bg,text_color,description} = category;
+    const {product_id,picture,title,category_type,category_bg,card_bg,text_color} = category;
 
     return (
 
@@ -22,5 +23,9 @@ const Category = ({category}) => {
 
     );
 };
+
+Category.propTypes = {
+    category: PropTypes.object.isRequired
+  };
 
 export default Category;
