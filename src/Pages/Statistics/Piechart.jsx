@@ -21,6 +21,8 @@ function PieChart() {
                         type="pie"
                         width={375}
                         height={300}
+
+                        
                         series={[totalDonation, donatedItems.length]}
                         options={{
                             labels: ['Total Donation', 'Donated Items']
