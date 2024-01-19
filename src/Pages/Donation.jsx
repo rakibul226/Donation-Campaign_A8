@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Donated from "./Donation/Donated";
+import {Helmet} from "react-helmet";
 
 const Donation = () => {
   const [donated, setDonated] = useState([]);
@@ -17,6 +18,10 @@ const Donation = () => {
   }, []);
   return (
     <div>
+
+      <Helmet>
+        <title>Donation</title>
+      </Helmet>
       {noDataFound ? (
         <p className="text-center mt-96 text-6xl">No data found.</p>
 
