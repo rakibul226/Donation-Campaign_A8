@@ -1,10 +1,10 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "./Banner";
 import AllCategory from "./Category/AllCategory";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
-  const categorys = useLoaderData();
+  const categories = useLoaderData();
 
   return (
     <>
@@ -12,9 +12,9 @@ const Home = () => {
         <title>Donation Camping</title>
       </Helmet>
       <div className="md:px-14 lg:px-36">
-      <Banner></Banner>
-      <AllCategory categorys={categorys}></AllCategory>
-    </div>
+        <Banner></Banner>
+        <AllCategory categories={categories}></AllCategory>
+      </div>
     </>
   );
 };

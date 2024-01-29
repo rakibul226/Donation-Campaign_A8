@@ -3,26 +3,22 @@ import { useLoaderData, useParams } from "react-router-dom";
 import CategoryDetails from "./CategoryDetails";
 
 const SelectedCategory = () => {
+  const [categoryItem, setCategoryItem] = useState({});
 
-   
-    const [categoryItem, setCategoryItem] = useState({});
+  const { product_id } = useParams();
+  const Categorys = useLoaderData();
 
-
-    const {product_id} = useParams();
-    const Categorys = useLoaderData();
-
-    useEffect(()=>{
-
-        const findCategory = Categorys ?.find((Category) => Category.product_id === product_id);
-        setCategoryItem(findCategory)
-
-    }
-    )
-    return (
-        <div>
-            <CategoryDetails categoryItem={categoryItem}></CategoryDetails>
-        </div>
+  useEffect(() => {
+    const findCategory = Categorys?.find(
+      (Category) => Category.product_id === product_id
     );
+    setCategoryItem(findCategory);
+  });
+  return (
+    <div>
+      <CategoryDetails categoryItem={categoryItem}></CategoryDetails>
+    </div>
+  );
 };
 
 export default SelectedCategory;
