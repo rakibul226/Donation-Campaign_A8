@@ -15,7 +15,7 @@ const Category = ({ category }) => {
   return (
     <Link to={`/category/${product_id}`}>
       <div
-        className="card w-96 md:w-80 lg:w-auto mx-auto bg-base-100 shadow-xl"
+        className="card w-96 md:w-80 lg:w-auto lg:min-h-60 mx-auto bg-base-100 shadow-xl"
         style={{ background: card_bg }}
       >
         <figure>
