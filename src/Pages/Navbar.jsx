@@ -26,11 +26,11 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex flex-1 md:flex-none pr-4 ">
-          {/* <Link className="ml-40 w-48 mb-4 md:m-0 "> */}
-          <span className="ml-40 w-48 mb-4 md:m-0 ">
-            <img src="Logo.png" alt="" />
-          </span>
-          {/* </Link> */}
+          <Link className="ml-40 w-48 mb-4 md:m-0 " to="/">
+            {/* <span className="ml-40 w-48 mb-4 md:m-0 "> */}
+            <img src="/Logo.png" alt="" />
+            {/* </span> */}
+          </Link>
         </div>
       </div>
       <div className="navbar-end hidden md:flex">
