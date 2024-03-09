@@ -29,7 +29,7 @@ const Banner = () => {
                   placeholder="Search"
                 />
 
-                <button className="relative z-[2] rounded-r   px-6 py-2 text-xs font-medium uppercase text-white bg-red-500 transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none ">
+                <button className="relative z-[2] rounded-r   px-6 py-2 text-xs font-medium uppercase text-white bg-red-500 transition duration-150 ease-in-out hover:bg-red-400 focus:outline-none ">
                   Search
                 </button>
               </div>
